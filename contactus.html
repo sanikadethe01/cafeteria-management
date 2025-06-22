@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url("simple.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #00aaff;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 40px 20px;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .banner:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .contact-form:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+        .banner img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .banner h1 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        .contact-form {
+            margin: 30px 0;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        footer {
+            margin-top: 25px;
+            text-align: center;
+            padding: 10px;
+            background-color: #44586300;
+            color: rgb(95, 82, 82);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span style="color: cyan; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Cafeteria Management System</span>
+        <a href="home.html">HOME</a>
+        <a href="items.php">PLACE_ORDER</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="Feedback.php">FEEDBACK</a>
+        <a href="logout.php">LOGOUT</a>
+    </nav>
+
+    <section class="banner">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png" alt="Welcome">
+        <h1>Contact Us</h1>
+        <p>We’re here to answer any questions you may have. Get in touch!</p>
+    </section>
+
+    <section class="contact-form">
+        <label for="name">Name:</label>
+        <p>Sanika, Onkar & Suhani<br>PCCOE, Pune</p>
+
+        <label for="email">Email:</label>
+        <p>pccoe@gmail.com</p>
+
+        <label for="phone">Phone:</label>
+        <p>749840XXXX</p>
+    </section>
+    <footer>
+        &copy; 2025 Cafeteria Management System. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
